@@ -1,17 +1,18 @@
-export class Practica{
+import { number } from "yargs";
 
-    //condicionales
-    mostrarDatos(mostrarMje: boolean): string{
-        if(mostrarMje == true){
+export class Practica {
+
+    mostrarDatos(mostrarMje: boolean): string {
+        if (mostrarMje == true) {
             return "Hola mundo";
         }
-        else{
+        else {
             return "No hay mensaje";
         }
     }
 
-    devolverNumero(num: number): any{
-        switch(num){
+    devolverNumero(num: number): any {
+        switch (num) {
             case 1:
                 return 1;
                 break;
@@ -26,9 +27,14 @@ export class Practica{
         }
     }
 
-    diasDeSemana(): string{
-        let diassemana:Array<string>= ["lunes", "martes", "miercoles", "jueves"];
+    diasDeSemana(): string {
+        let diassemana: Array<string> = ["lunes", "martes", "miercoles", "jueves"];
         let aux = diassemana[1];
         return aux;
     }
+
+    add(x: any, y: any): any {
+        return x + y;
+    }
 }
+

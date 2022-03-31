@@ -31,3 +31,14 @@ test('Devuelve el resultado de la suma 3 + 7', () => {
     const aux = new Suma();
     expect (aux.operacion(3, 7)).toBe(10);
 });
+
+//Overloaded
+test('Suma 4 y 9 y devuelve el resultado', () => {
+    const aux = new Practica();
+    expect (aux.add(4, 9)).toBe(13);
+});
+
+test('Devuelve dos strings', () => {
+    const aux = new Practica();
+    expect (aux.add("Hola ", "Mundo")).toBe("Hola Mundo");
+});
